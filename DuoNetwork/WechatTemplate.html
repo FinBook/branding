@@ -1,0 +1,112 @@
+<section style='font-size:16px; font-family: PingFangSC-Regular, sans-serif, 微软雅黑;' label='Powered by DUO Network'>
+    <section class='text-title' style='height: 80px; width: 100%; display: flex; justify-content: center; align-items: center'>
+        <h2 style='font-size:30px; color: #69BCFF; font-family: PingFangSC-Medium; font-weight: 400; text-shadow: 0 0 1px rgba(0,0,0,0.10);'>文章标题</h2>
+    </section>
+    <section class='abstract' style='padding: 10px; background: rgba(188,221,255,0.30);'>
+        <section class='abstract-title' style='font-family: PingFangSC-Medium; font-size: 16px; color: #5CA4DE; width: 60px; border-bottom: 2px solid #5CA4DE; margin-bottom: 10px;'>
+            导读
+        </section>
+        <section calss='abstract-content' style='font-family: PingFangSC-Regular; font-size: 14px; color: #5CA4DE;'>
+            <p style='margin: 5px 0'>
+                本文概括了DUO Network 的定价机（Price Oracle）和 CAT 交易所的特性和设计考量。不了解 CAT 是什么的朋友，可点击<strong>这里</strong>查看。
+            </p>
+            <p style='margin: 5px 0'>
+                我们的定价机具有相关性、时效性和价格操纵阻力。最终标的定价通过汇总各个中心化交易所的近期交易数据，并计算交易量加权平均的交易价格而得出。而 CAT 交易所选用了 0x 协议，既可满足我们对 CATs 上市和交易的大部分要求，又允许我们自由建立自己的 relayer。
+            </p>
+        </section>
+    </section>
+    <section class='paragraph'>
+        <section class='para-title' style='height: 40px; width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 10px'>
+            <section style='display: flex'>
+                <section>
+                    <img src='https://duo.network/duonetworkimgsource/wechatImgs/images/DUO_%2069BCFF_T_left.png' style='height: 40px; width: 40px' />
+                </section>
+                <section style='font-family: PingFangSC-Medium; font-size: 20px; color: #69BCFF; text-align: center; line-height: 40px;'>段落标题一</section>
+                <section>
+                    <img src='https://duo.network/duonetworkimgsource/wechatImgs/images/DUO_%2069BCFF_T_right.png'
+                        style='height: 40px; width: 40px' />
+                </section>
+            </section>
+        </section>
+        <section class='para-content' style='font-family: PingFangSC-Regular; font-size: 14px; color: #323232; padding: 0 10px;'>
+            <section class='sub-title' style='display: flex; align-items: center;'>
+                <img src='https://duo.network/duonetworkimgsource/wechatImgs/images/Abstract_title_pic.png' style='width: 14px; height: 14px; margin-right: 10px'/>
+                <section class='sub-title-text' style='font-family: PingFangSC-Medium; font-size: 14px; color: #69BCFF;'>小标题一</section>
+            </section>
+            <p style='margin: 5px 0'>
+                假设有效市场中不存在无风险套利的情况下，通过计算复制组合的盈亏来给衍生品定价。因此，衍生品的定价和交易核心是利用投资标的对冲衍生品的能力。在当前电子货币市场中，中心化交易所为标的资产提供了最好的流动性，从而使得衍生品对冲的执行更加方便。
+            </p>
+            <p style='margin: 5px 0'>
+                我们的终极目标是使定价机体系去中心化。由于定价需要可交易或已交易价格，基于感知价值的预测是不准确的。因此，Schelling 方案不在选项内。将外部价格源连接到智能合约也是不可行的，因为数据源容易被操控且存在第三方风险。我们计划将定价机系统转移到权益证明（Proof of Stake Scheme）上，作为 DUO 通证生态系统的一部分。
+            </p>
+        </section>
+        <section class='para-title' style='height: 40px; width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 10px'>
+            <section style='display: flex'>
+                <section>
+                    <img src='https://duo.network/duonetworkimgsource/wechatImgs/images/DUO_%2069BCFF_T_left.png' style='height: 40px; width: 40px' />
+                </section>
+                <section style='font-family: PingFangSC-Medium; font-size: 20px; color: #69BCFF; text-align: center; line-height: 40px;'>段落标题二</section>
+                <section>
+                    <img src='https://duo.network/duonetworkimgsource/wechatImgs/images/DUO_%2069BCFF_T_right.png'
+                        style='height: 40px; width: 40px' />
+                </section>
+            </section>
+        </section>
+        <section class='para-content' style='font-family: PingFangSC-Regular; font-size: 14px; color: #323232; padding: 0 10px;'>
+            <section class='sub-title' style='display: flex; align-items: center;'>
+                <img src='https://duo.network/duonetworkimgsource/wechatImgs/images/Abstract_title_pic.png' style='width: 14px; height: 14px; margin-right: 10px'/>
+                <section class='sub-title-text' style='font-family: PingFangSC-Medium; font-size: 14px; color: #69BCFF;'>小标题一</section>
+            </section>
+            <p style='margin: 5px 0'>
+                构建一个新的去中心化交易所（DEX）是为了给 CATs 提供市场流动性。在对比了当前所有 DEX 平台后，我们决定构建自己的交易所，以便提供一个集性能、功能和用户体验于一体的理想交易平台。交易所的完整比较可以参照下表。
+            </p>
+            <p style='margin: 5px 0'>
+                基于 CAT 设计中的固有需求，资产托管（custodian）必须能够访问用户的账户，并根据合约的收益或折算直接调整余额。因此，如果交易所要求用户存入资产，则必须与智能合约做出的调整一致，从而保证市场的 CAT 定价及时反映其净值。目前，所有中心化交易所和部分去中心化交易所如 EtherDelta，IDEX 和 Dex.top 都属于需要用户资产存储（asset deposit）类别。CATs 可以在这些交易所交易，但无法支持 CATs 的所有功能。
+            </p>
+            <p style='margin: 5px 0'>
+                另一个选择是 Bancor 协议，其价格由类似于计划经济的预定义公式决定。这一特性并不可取，因为在去中心化模式下，我们认为所有衍生品的价格定价机制应是市场驱动的，而价格模型models）只是作为价格指导。
+            </p>
+            <section class='sub-title' style='display: flex; align-items: center;'>
+                <img src='https://duo.network/duonetworkimgsource/wechatImgs/images/Abstract_title_pic.png' style='width: 14px; height: 14px; margin-right: 10px'/>
+                <section class='sub-title-text' style='font-family: PingFangSC-Medium; font-size: 14px; color: #69BCFF;'>小标题二</section>
+            </section>
+            <p style='margin: 5px 0'>
+                其他交易所，例如 Airswap 和 Kyber，  基本上与 CATs 兼容。然而，其交易委托账本缺乏深度，无法支持竞价/报价等操作，导致市场的价格发现效率低下，无法让所有用户在同等市场准入下参与市场。因此，相较于券商报价模式，基于交易委托账本的流动性平台更适合 CAT。
+            </p>
+            <p style='margin: 5px 0'>
+                在考虑过所有因素后，0x 协议是目前唯一可行的选择。它既可以满足我们对 CATs 上市和交易的大部分要求，又允许我们自由建立自己的 relayer。我们之所以不用现有的 relayer 如 RadaRelay 或 DDEX，是因为除了标准的 0x relayer，我们还需要考虑衍生品折算带来的净值变动及时反映在交易所委托账本上。例如每次折算后，双级通证的交易委托账本必须清除。期权通证需要一个能优化波动性交易的用户界面。此外，第三方 relayers 不能保证 CAT 的及时上市和退市，尤其是当 CAT 的发行量逐渐上升。所以，建立我们自己的 relayer 可以确保用户不受干扰地进入市场。
+            </p>
+            <p style='margin: 5px 0'>
+                另外，我们正紧密关注着相关的区块链扩展技术，以提高交易速度和支持跨链资产互换。与比特币闪电网络（Bitcoin Lightning Network) 类似，Plasma 是一种区块链链下设计，以 Ethereum 作为资产安全链。当 Plasma 技术进入一个更成熟的阶段时，一个高性能的、拥有完全去信任化的链上交易委托账本的 DEX 就可以实现。跨链交易可以使 DEXes 更加强大且更易于使用。目前，有几种区块链解决方案试图实现跨链交易，如公证方案、侧链/relayer 和哈希锁定（hash locking）。我们的目标是在不久的将来，让 CAT 交易所支持跨链交易。
+            </p>
+        </section>
+        <section class='end-line' style='display: flex; justify-content: space-between; align-items: center; padding: 0 10px; margin: 10px 0;'>
+            <section style='width: 40%; height: 1px; border-top: 1px dashed #69BCFF'></section>
+            <section style='font-family: PingFangSC-Medium; font-size: 12px; color: #69BCFF; line-height: 20px;'>全文完</section>
+            <section style='width: 40%; height: 1px; border-top: 1px dashed #69BCFF'></section>
+        </section>
+    </section>
+    <section class='qrcode' style='display: flex; align-items: center; flex-direction: column; margin: 0 50px 30px 50px; padding: 10px; border: 1px solid #69BCFF'>
+        <section style='font-family: PingFangSC-Medium; font-size: 18px; color: #69BCFF; text-align: center;'>关注 DUO Network 公众号</section>
+        <section class='qrcode-img' style='width: 100px; height: 100px; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.20);'>
+            <img src='https://duo.network/duonetworkimgsource/wechatImgs/images/qrcode.png' style='width: 100%; height: 100%;'>
+        </section>
+    </section>
+    <section class='prev-articles' style='padding: 0 10px'>
+        <section class='sub-title' style='display: flex; align-items: center; margin-bottom: 10px'>
+            <img src='https://duo.network/duonetworkimgsource/wechatImgs/images/Abstract_title_pic.png' style='width: 14px; height: 14px; margin-right: 10px'/>
+            <section class='sub-title-text' style='font-family: PingFangSC-Medium; font-size: 14px; color: #69BCFF;'>往期精彩内容</section>
+        </section>
+        <section style='font-family: PingFangSC-Regular;font-size: 14px;color: #769AB7; margin: 5px 0'>
+            文章标题一
+        </section>
+        <section style='font-family: PingFangSC-Regular;font-size: 14px;color: #769AB7; margin: 5px 0'>
+            文章标题二
+        </section>
+    </section>
+    <section class='prev-articles' style='padding: 0 10px; margin-top: 10px'>
+        <section style='font-family: PingFangSC-Regular;font-size: 14px;color: #323232;'>
+            点击下方<span style='color: #69BCFF'>阅读原文</span>，即可
+        </section>
+    </section>
+</section>
